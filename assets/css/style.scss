@@ -1,0 +1,24 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+a:hover, a:focus {
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.inner {
+  position: relative;
+  max-width: 1000px;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+
+/*
+Workaround for GH Pages not supporting highlighting
+of JSX: https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers
+We just pretend it's regular JS.
+*/
+
+.highlight .err { color: inherit; background-color: inherit; }
